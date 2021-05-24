@@ -13,14 +13,14 @@ public class Main {
     public static void main(String[] args) {
         BaseCustomerManager neroCustomerManager=new NeroCustomermanager();
         BaseCustomerManager starbuckCustomerManager=new StarbucksCustomermanager(new MernisServiceAdaptor());
-        Customer Zakire=new Customer(2,"ahmet","yildiz",LocalDate.of(1985,06,05),"123456987");
+        Customer ahmet=new Customer(2,"ahmet","yildiz",LocalDate.of(1985,06,05),"123456987");
         Customer engin=new Customer();
         engin.setId(1);
         engin.setFirstName("Engin");
         engin.setLastName("Demirog");
         engin.setNationaltyId("123456");
         engin.setDateOfBirth(LocalDate.of(1980,05,06));
-        neroCustomerManager.Save(Zakire);
+        neroCustomerManager.Save(ahmet);
         starbuckCustomerManager.Save(engin);
 
     }
